@@ -8,7 +8,7 @@ use App\Http\Controllers\Frontend\UserController;
 use App\Http\Controllers\Frontend\WishlistController;
 use App\Http\Controllers\Frontend\RatingController;
 
-Route::get('/home','Frontend\FrontendController@index');
+Route::get('/','Frontend\FrontendController@index');
 Route::get('category','Frontend\FrontendController@category');
 Route::get('view-category/{slug}','Frontend\FrontendController@viewcategory');
 Route::get('category/{cate_slug}/{prod_slug}','Frontend\FrontendController@productview');
